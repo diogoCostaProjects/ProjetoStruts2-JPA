@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+<!-- Definição geral  -->
+
+	<definition name="layoutBase" template="/Templates/layoutBase.jsp">
+		<put-attribute name="title" value="Teste Struts2 Treinaweb"/>
+		<put-attribute name="header" value="/Templates/header.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/Templates/footer.jsp"/>
+	</definition>
+	
+	<!-- Álbum -->
+	
+	<definition name ="album.listar.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Listagem de álbuns"/>
+		<put-attribute name="body" value="/Album/pages/listar.jsp"/>	
+	</definition>
+	<definition name ="album.alterar.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Alteração de álbuns"/>
+		<put-attribute name="body" value="/Album/pages/alterar.jsp"/>	
+	</definition>
+	<definition name ="album.detalhar.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Detalhes do álbum"/>
+		<put-attribute name="body" value="/Album/pages/detalhar.jsp"/>
+	</definition>
+	<definition name ="album.erro.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Erro"/>
+		<put-attribute name="body" value="/Album/pages/erro.jsp"/>
+	</definition>
+	<definition name ="album.inserir.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Inserção de álbum"/>
+		<put-attribute name="body" value="/Album/pages/inserir.jsp"/>
+	</definition>
+	
+	<!-- Música -->
+	
+	<definition name ="musica.listar.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Listagem de músicas"/>
+		<put-attribute name="body" value="/Musica/pages/listar.jsp"/>
+	</definition>
+	<definition name ="musica.alterar.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Alteração de música"/>
+		<put-attribute name="body" value="/Musica/pages/alterar.jsp"/>
+	</definition>
+	<definition name ="musica.detalhar.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Detalhes da música"/>
+		<put-attribute name="body" value="/Musica/pages/detalhar.jsp"/>
+	</definition>
+	<definition name ="musica.erro.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Erro"/>
+		<put-attribute name="body" value="/Musica/pages/erro.jsp"/>
+	</definition>
+	<definition name ="musica.inserir.tiles" extends="layoutBase">
+		<put-attribute name="title" value="Inserção de música"/>
+		<put-attribute name="body" value="/Musica/pages/inserir.jsp"/>
+	</definition>
+	
+	
+	
+</tiles-definitions>	
